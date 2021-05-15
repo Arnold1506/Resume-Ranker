@@ -1,0 +1,36 @@
+{% extends 'layout.html' %} {% block body %}
+
+<!-- <div class="card btn-primary-outline">
+  <div class="card-body"> -->
+    <!-- <h1>Send Acceptance Notifications</h1> -->
+    <!-- <form>
+      <div class="form-group mt-5">
+        <textarea name="" id="text-input" class="form-control form-control-lg" placeholder="Acceptance Message..."></textarea>
+      </div>
+      <button class="btn btn-primary btn-lg  float-right">Send Mails</button>
+      <button class="btn btn-primary btn-lg  float-right mr-2">Send Text Messages</button>
+    </form> -->
+  <!-- </div>
+</div> -->
+
+<hr>
+<h2>Results</h2>
+<table class="table table-striped table-hover">
+  <tr>
+    <!-- <th>No.</th> -->
+    <th>Name</th>
+    <th>Contact</th>
+    <th>Email</th>
+    <th>Calculated Score</th>
+  </tr>
+  {% for article in articles %}
+  <tr>
+    <!-- <td>{{article.name}}</td> -->
+    <td>{{article[0]}}</td>
+    <td>{{article[2]}}</td>
+    <td><a href="edit_article/{{article.id}}" class="btn btn-default pull-right">{{article[1]}}</a></td>
+    <td class="ml-2 text-success">{{article[-1]}}</td>
+  </tr>
+  {% endfor %}
+</table>
+{% endblock %}

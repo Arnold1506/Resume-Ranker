@@ -1,0 +1,9 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <h1>About Us</h1>
+  <p>Snoopy is an of the age software which acts as a human resource database for organizing applicants. It skips through the tedious process of screening through thousands of applications for a single job profile by automating the whole process. It uses a smart analysis feature to sift through a large batch of applicants, organizing them based on the required skills, serialize with respect to the required parameters and ultimately contact them directly by dropping an acceptance or rejection email/ text. It is a is a is a simple tool which makes the life of both the HR Manager or Recruiter and the applicant. The interface allows the applicants to easily upload their resumes, which are then processed using NLP and analyzed (custom analysis is offered too). The analysis result, ranks the applicants suitable for the job and presents the top ones for the job profile, after which a mail is sent to all the selected ones at a click of a button.</p>
+  <img src="{{ url_for('static',filename='img/process.jpg') }}" alt="" style="width:100%">
+  <img src="{{ url_for('static',filename='img/comparision.jpg') }}" alt="" style="width:100%">
+  <br><br><br><br>
+{% endblock %}

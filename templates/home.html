@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <div class="text-center">
+    <h1>Welcome To Resume Ranker</h1>
+    <p class="lead">This application automates the application screening process.</p>
+    {% if session.logged_in == NULL %}
+      <a href="/register" class="btn btn-primary btn-lg">Register</a>
+      <a href="/login" class="btn btn-success btn-lg">Login</a>
+    {% endif %}
+      <!-- <img src="{{ url_for('static',filename='img/home.jpg') }}" alt="" style="width:100%"> -->
+  </div>
+{% endblock %}

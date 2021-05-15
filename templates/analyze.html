@@ -1,0 +1,200 @@
+{% extends 'layout.html' %} {% block body %}
+
+<!-- The Modal -->
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog modal-lg text-dark">
+    <div class="modal-content details-modal">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Advanced Filtering</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <h5>Software Developer</h5>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+          <label class="form-check-label" for="inlineCheckbox1">Data Mining / Analysis</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+          <label class="form-check-label" for="inlineCheckbox2">HTML</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+          <label class="form-check-label" for="inlineCheckbox1">AI</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+          <label class="form-check-label" for="inlineCheckbox2">ML</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+          <label class="form-check-label" for="inlineCheckbox2">Cloud</label>
+        </div>
+        <hr>
+
+        <h5>Big Data Engineer</h5>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+          <label class="form-check-label" for="inlineCheckbox1">Data Mining / Analysis</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+          <label class="form-check-label" for="inlineCheckbox2">HTML</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+          <label class="form-check-label" for="inlineCheckbox1">AI</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+          <label class="form-check-label" for="inlineCheckbox2">ML</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+          <label class="form-check-label" for="inlineCheckbox2">Cloud</label>
+        </div>
+        <hr>
+
+        <h5>Sales & Marketting</h5>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+          <label class="form-check-label" for="inlineCheckbox1">Data Mining / Analysis</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+          <label class="form-check-label" for="inlineCheckbox2">HTML</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+          <label class="form-check-label" for="inlineCheckbox1">AI</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+          <label class="form-check-label" for="inlineCheckbox2">ML</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+          <label class="form-check-label" for="inlineCheckbox2">Cloud</label>
+        </div>
+        <hr>
+
+        <h5>Accounting & Finance</h5>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+          <label class="form-check-label" for="inlineCheckbox1">Data Mining / Analysis</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+          <label class="form-check-label" for="inlineCheckbox2">HTML</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+          <label class="form-check-label" for="inlineCheckbox1">AI</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+          <label class="form-check-label" for="inlineCheckbox2">ML</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+          <label class="form-check-label" for="inlineCheckbox2">Cloud</label>
+        </div>
+
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Filter</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<h4 class="text-right"> Welcome {{session.username}}</h4>
+<!-- <a class="btn btn-success" href="/add_article"> Add Article</a> -->
+<!-- <h2 class="text-right" style="color: rgb(50, 158, 50)">Total Applicants: 23</h2> -->
+
+<div class="card btn-primary-outline">
+  <div class="card-body">
+    <h1>Analyze</h1>
+    <form action="" method="POST">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="rate">No. of people needed</label>
+            <!-- <span id="rate-value" class="label bg-primary px-3 rounded float-right">1</span> -->
+            <input type="number" min="1" name="nop" value={{request.form.nop}}>
+            <!-- <input type="range" id="rate" class="custom-range" min="0.5" max="2" value="1" step="0.1"> -->
+          </div>
+        </div>
+        <!-- <div class="col-md-6">
+          <div class="form-group">
+            <label for="pitch">Experience in years</label>
+
+            <input type="number" min="1" name="eiy" value={{request.form.eiy}}>
+
+          </div>
+        </div> -->
+      </div>
+      <h3>Filters</h3>
+      <!-- form-check-inline -->
+      <div class="form-check form-check">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" name="skilla">
+        <label class="form-check-label" for="inlineCheckbox1">Software Developer</label>
+      </div>
+      <div class="form-check form-check">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" name="skillb">
+        <label class="form-check-label" for="inlineCheckbox2">Big Data Engineer</label>
+      </div>
+      <!-- <br> -->
+      <div class="form-check form-check">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" name="skillc">
+        <label class="form-check-label" for="inlineCheckbox3">Sales & Marketing</label>
+      </div>
+      <div class="form-check form-check">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" name="skilld">
+        <label class="form-check-label" for="inlineCheckbox3">Accounting & Finance</label>
+      </div>
+      <!-- <div class="form-group">
+        <select id="voice-select" class="form-control form-control-lg"></select>
+      </div> -->
+      <a href="#" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">Advanced</a>
+
+      <button class="btn btn-primary btn-lg float-right" type="submit">Analyze</button>
+      <!-- <hr>
+      <div class="form-group mt-5">
+        <textarea name="" id="text-input" class="form-control form-control-lg" placeholder="Acceptance Message..."></textarea>
+      </div>
+      <button class="btn btn-primary btn-lg  float-right">Send Mails</button>
+      <button class="btn btn-primary btn-lg  float-right mr-2">Send Text Messages</button> -->
+    </form>
+  </div>
+</div>
+
+<!-- <hr>
+<h2>Results</h2>
+<table class="table table-striped table-hover">
+  <tr>
+    <th>No.</th>
+    <th>Name</th>
+    <th>Contact</th>
+    <th>Email</th>
+    <th>Calculated Score</th>
+  </tr>
+  {% for article in articles %}
+  <tr>
+    <td>{{article.id}}</td>
+    <td>{{article.title}}</td>
+    <td>{{article.create_date}}</td>
+    <td><a href="edit_article/{{article.id}}" class="btn btn-default pull-right">someone@example.com</a></td>
+    <td class="ml-2 text-success">94<a href="edit_article/{{article.id}}" class="btn btn-default pull-right">view details</a></td>
+  </tr>
+  {% endfor %}
+</table> -->
+{% endblock %}
